@@ -1,0 +1,216 @@
+
+root@iZ6we5ndfhv6bj7a45lzb2Z:~/alfred# python models/eval/eval_seq2seq.py --model_path /root/alfred/model:seq2seq_im_mask,name:base30_pm010_sg010_01/best_seen.pth --eval_split valid_seen --data data/json_feat_2.1.0 --model models.model.seq2seq_im_mask --gpu --num_threads 1 --preprocess --fast_epoch & 
+[1] 3605
+root@iZ6we5ndfhv6bj7a45lzb2Z:~/alfred# /usr/local/lib/python3.5/dist-packages/requests/__init__.py:104: RequestsDependencyWarning: urllib3 (1.26.7) or chardet (2.3.0)/charset_normalizer (2.0.7) doesn't match a supported version!
+  RequestsDependencyWarning)
+/usr/local/lib/python3.5/dist-packages/requests/__init__.py:104: RequestsDependencyWarning: urllib3 (1.26.7) or chardet (2.3.0)/charset_normalizer (2.0.7) doesn't match a supported version!
+  RequestsDependencyWarning)
+{'tests_seen': 1533,
+ 'tests_unseen': 1529,
+ 'train': 21023,
+ 'valid_seen': 820,
+ 'valid_unseen': 821}
+Loading:  /root/alfred/model:seq2seq_im_mask,name:base30_pm010_sg010_01/best_seen.pth
+
+Preprocessing dataset and saving to pp folders ... This is will take a while. Do this once as required:
+Preprocessing train
+100% (16 of 16) |############################################################################################################################################| Elapsed Time: 0:00:00 Time:  0:00:00
+Preprocessing valid_seen
+100% (16 of 16) |############################################################################################################################################| Elapsed Time: 0:00:00 Time:  0:00:00
+Preprocessing valid_unseen
+100% (16 of 16) |############################################################################################################################################| Elapsed Time: 0:00:00 Time:  0:00:00
+Preprocessing tests_unseen
+100% (16 of 16) |############################################################################################################################################| Elapsed Time: 0:00:00 Time:  0:00:00
+Preprocessing tests_seen
+100% (16 of 16) |############################################################################################################################################| Elapsed Time: 0:00:00 Time:  0:00:00
+/usr/local/lib/python3.5/dist-packages/requests/__init__.py:104: RequestsDependencyWarning: urllib3 (1.26.7) or chardet (2.3.0)/charset_normalizer (2.0.7) doesn't match a supported version!
+  RequestsDependencyWarning)
+Found path: /root/.ai2thor/releases/thor-201909061227-Linux64/thor-201909061227-Linux64
+Mono path[0] = '/root/.ai2thor/releases/thor-201909061227-Linux64/thor-201909061227-Linux64_Data/Managed'
+Mono config path = '/root/.ai2thor/releases/thor-201909061227-Linux64/thor-201909061227-Linux64_Data/Mono/etc'
+Unable to preload the following plugins:
+	ScreenSelector.so
+Display 0 'NVIDIA VGX  32"': 1024x768 (primary device).
+Logging to /root/.config/unity3d/Allen Institute for Artificial Intelligence/AI2-Thor/Player.log
+ThorEnv started.
+Evaluating: data/json_feat_2.1.0/pick_heat_then_place_in_recep-PotatoSliced-None-SinkBasin-13/trial_T20190909_115736_122556
+No. of trajectories left: 15
+Resetting ThorEnv
+Task: Place a cooked potato slice in the sink
+/usr/local/lib/python3.5/dist-packages/torch/nn/functional.py:2539: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+/usr/local/lib/python3.5/dist-packages/torch/nn/functional.py:1386: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+	predicted STOP
+-------------
+SR: 0/1 = 0.000
+GC: 0/4 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_heat_then_place_in_recep-PotatoSliced-None-SinkBasin-13/trial_T20190909_115736_122556
+No. of trajectories left: 14
+Resetting ThorEnv
+Task: Put a cooked piece of potato in the sink.
+Interact API failed 10 times; latest error 'Cube.711 is blocking Agent 0 from moving 0'
+-------------
+SR: 0/2 = 0.000
+GC: 0/8 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_heat_then_place_in_recep-PotatoSliced-None-SinkBasin-13/trial_T20190909_115736_122556
+No. of trajectories left: 13
+Resetting ThorEnv
+Task: Put a sliced egg inside the sink
+	predicted STOP
+-------------
+SR: 0/3 = 0.000
+GC: 0/12 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_and_place_simple-Vase-None-CoffeeTable-207/trial_T20190909_091246_807206
+No. of trajectories left: 12
+Resetting ThorEnv
+Task: Place a vase on a coffee table
+Interact API failed 10 times; latest error 'CoffeeTable_b62bfba1 is blocking Agent 0 from moving 0'
+-------------
+SR: 0/4 = 0.000
+GC: 0/13 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_and_place_simple-Vase-None-CoffeeTable-207/trial_T20190909_091246_807206
+No. of trajectories left: 11
+Resetting ThorEnv
+Task: Place a bowl on a table.
+Interact API failed 10 times; latest error 'CoffeeTable_b62bfba1 is blocking Agent 0 from moving 0'
+-------------
+SR: 0/5 = 0.000
+GC: 0/14 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_and_place_simple-Vase-None-CoffeeTable-207/trial_T20190909_091246_807206
+No. of trajectories left: 10
+Resetting ThorEnv
+Task: Move bowl to coffee table.
+Interact API failed 10 times; latest error 'CoffeeTable_b62bfba1 is blocking Agent 0 from moving 0'
+-------------
+SR: 0/6 = 0.000
+GC: 0/15 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_and_place_simple-Knife-None-SideTable-3/trial_T20190918_184236_557252
+No. of trajectories left: 9
+Resetting ThorEnv
+Task: place a knife on the microwave oven table
+	predicted STOP
+-------------
+SR: 0/7 = 0.000
+GC: 0/16 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_and_place_simple-Knife-None-SideTable-3/trial_T20190918_184236_557252
+No. of trajectories left: 8
+Resetting ThorEnv
+Task: Put a knife on the counter. 
+	predicted STOP
+-------------
+SR: 0/8 = 0.000
+GC: 0/17 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_and_place_simple-Knife-None-SideTable-3/trial_T20190918_184236_557252
+No. of trajectories left: 7
+Resetting ThorEnv
+Task: move a knife over to the microwaves cabinet
+	predicted STOP
+-------------
+SR: 0/9 = 0.000
+GC: 0/18 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_clean_then_place_in_recep-ButterKnife-None-Drawer-30/trial_T20190908_052007_212776
+No. of trajectories left: 6
+Resetting ThorEnv
+Task: Place a rinsed knife inside a drawer.
+	predicted STOP
+-------------
+SR: 0/10 = 0.000
+GC: 0/21 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_clean_then_place_in_recep-ButterKnife-None-Drawer-30/trial_T20190908_052007_212776
+No. of trajectories left: 5
+Resetting ThorEnv
+Task: Put a cleaned knife in a drawer. 
+	predicted STOP
+-------------
+SR: 0/11 = 0.000
+GC: 0/24 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_clean_then_place_in_recep-ButterKnife-None-Drawer-30/trial_T20190908_052007_212776
+No. of trajectories left: 4
+Resetting ThorEnv
+Task: place a clean knife in the drawer
+	predicted STOP
+-------------
+SR: 0/12 = 0.000
+GC: 0/27 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_heat_then_place_in_recep-AppleSliced-None-CounterTop-14/trial_T20190907_232225_725376
+No. of trajectories left: 3
+Resetting ThorEnv
+Task: Place a cooked slice of apple to the right of the yellow knife on the counter.
+	predicted STOP
+-------------
+SR: 0/13 = 0.000
+GC: 0/31 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_heat_then_place_in_recep-AppleSliced-None-CounterTop-14/trial_T20190907_232225_725376
+No. of trajectories left: 2
+Resetting ThorEnv
+Task: Slice an apple, cook it and set it on the counter
+	predicted STOP
+-------------
+SR: 0/14 = 0.000
+GC: 0/35 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_heat_then_place_in_recep-AppleSliced-None-CounterTop-14/trial_T20190907_232225_725376
+No. of trajectories left: 1
+Resetting ThorEnv
+Task: Put a warm apple slice on the counter. 
+Interact API failed 10 times; latest error 'list index out of range'
+-------------
+SR: 0/15 = 0.000
+GC: 0/39 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+Evaluating: data/json_feat_2.1.0/pick_two_obj_and_place-Spoon-None-CounterTop-23/trial_T20190908_065238_500229
+No. of trajectories left: 0
+Resetting ThorEnv
+Task: Move two spoons to the kitchen counter. 
+Interact API failed 10 times; latest error 'Bad interact mask. Couldn't locate target object'
+-------------
+SR: 0/16 = 0.000
+GC: 0/41 = 0.000
+PLW SR: 0.000
+PLW GC: 0.000
+-------------
+
