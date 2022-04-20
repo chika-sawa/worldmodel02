@@ -66,11 +66,11 @@ cuDNNがインストールされていない環境、または、 cuDNNがイン
 
 対応としては、 以下のいずれかを実施します。​<br/>
 
-- 対応①
+- 対応①<br>
   環境にマッチしたcuDNNをインストールする​<br/>
   Nvidiaのサイトでcudaのバージョンに対応したバージョンを調べcuDNNをインストールします。 NvidiaのDeveloperサイトからNvidiaアカウントでログインしてパッケージをインストールする必要があります。 Nvidiaアカウントはメールアドレスで作成できます。​
 
-- 対応② 
+- 対応②<br>
   cuDNNを無効にする​<br/>
   models/eval/eval.pyの最初のほうに、以下のコードを追加する。​<br/>
   ```torch.backends.cudnn.enabled = False​```<br/>
@@ -127,9 +127,9 @@ X serverのDISPLAY変数に0を設定します。​<br>
 
 ### eval_seq2seq.pyの実行
 モデルの評価を行うには、eval_seq2seq.pyを実行します。<br>
-- seen環境​
+- seen環境​<br>
 ```python models/eval/eval_seq2seq.py --model_path model:seq2seq_im_mask,name:base30_pm010_sg010_01/best_seen.pth --eval_split valid_seen --data data/json_feat_2.1.0 --model models.model.seq2seq_im_mask --gpu --num_threads 1 --preprocess​```<br>
 
-- unseen環境​
+- unseen環境​<br>
 ```python models/eval/eval_seq2seq.py --model_path model:seq2seq_im_mask,name:base30_pm010_sg010_01/best_unseen.pth --eval_split valid_unseen --data data/json_feat_2.1.0 --model models.model.seq2seq_im_mask --gpu --num_threads 1 --preprocess​```<br>
 ※初回は--preprocessオプションをつける(初回はtrain,evalともに必要)
