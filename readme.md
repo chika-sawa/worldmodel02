@@ -54,6 +54,7 @@ dataディレクトリに移動​<br/>
 ```cd $ALFRED_ROOT/data​```<br/>
 ダウンロード及び解凍​<br/>
 ```sh download_data.sh json_feat```<br/>
+※AlfredのGithubには、最大17Gと記載がありますが、ダウンロードした7zip形式の圧縮ファイルが17Gで、解答すると35Gあり、合計で52Gあります
 
 ### コードの修正
 2022年4月現在、評価(eval)を実行時に、‘use_templated_goals’のエラーが発生するため、<br/>
