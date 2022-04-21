@@ -66,6 +66,7 @@ dataディレクトリに移動​<br/>
 cuDNNがインストールされていない環境、または、 cuDNNがインストールされているけどバージョンが環境とマッチしていない場合は、 ```RuntimeError: cuDNN error: CUDNN_STATUS_EXECUTION_FAILED```が発生します。​<br/>
 
 対応としては、 以下のいずれかを実施します。​<br/>
+※ NVIDIA cuDNNはGPUの処理を高速化するライブラリですので、可能であれば、cuDNNをインストールしたほうが高速に処理できます。
 
 - 対応①<br>
   環境にマッチしたcuDNNをインストールする​<br/>
@@ -75,7 +76,6 @@ cuDNNがインストールされていない環境、または、 cuDNNがイン
   cuDNNを無効にする​<br/>
   models/eval/eval.pyの最初のほうに、以下のコードを追加する。​<br/>
   ```torch.backends.cudnn.enabled = False​```<br/>
-  ※ NVIDIA cuDNNはGPUの処理を高速化するライブラリなので、可能であれば、cuDNNをインストールしたほうが高速に処理できます。
 
 ## 学習 trainの実行
 モデルの学習を行うには、 train_seq2seq.pyを実行します。<br/>
