@@ -34,7 +34,7 @@ debug用の10個のTask評価を行うfast_epoch実行結果​
 - インスタンス：Alibaba Cloud ECS(Elastic Compute Service)​
 - GPU： NVIDIA T4 (NVIDIA Tesla T4)​
 - CPU：16 vCores ​
-- ストレージ：100 GB　※後述するjsonファイルの容量が大きく90-100G必要​
+- ストレージ：100 GB　※後述するデータセットの容量が大きく90-100G必要​
 - Image：Ubuntu 16.04​
 - GPUドライバ：CUDA ver10.0※インスタンス作成時に「GPU ドライバーの自動インストール」にチェックをして、 CUDA ver10.0を選択​
 - OPENするPORT：追加で80,443のPORTを追加する。デフォルトではPORTが空いていないので追加。tensorbordを使用する場合は、PORT 6006も追加する。
